@@ -59,3 +59,14 @@ Hello <palavra randômica>
 __Observação:__ A aplicação deve rodar na porta 8080.
 
 > Informe sua imagem na área de comentários da Maratona.
+
+# Desafio 4
+
+## Integração contínua
+
+Baseado no conteúdo da [Aula ao Vivo 2](http://maratona.fullcycle.com.br/aula-ao-vivo-02.html), faça:
+
+1.	Crie um simples teste unitário realizando alguma validação no microsserviço de simulador
+2. Utilizando o Github Actions, crie um processo que quando um push ou uma pull request for criada em seu repositório, o processo de integração contínua é executado rodando o teste unitário e o build do microsserviço.
+
+> Informe na área de comentários o link direto para o GitHub Actions do repositório provando que o processo foi executado.
