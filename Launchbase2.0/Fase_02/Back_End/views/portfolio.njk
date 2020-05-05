@@ -1,0 +1,41 @@
+{% extends 'layout.njk'%}
+{%block head%}
+
+  <title>Portfolio - Thomas Erick</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  {%endblock%}
+  {%block content %}
+    <div id="wrapper">
+      <h1>Aulas</h1>
+    </div>
+
+    <section class="cards">
+
+      {% for item in items%}
+        <div class="card" id="{{item.id}}">
+          <div class="card__image-container">
+            <img src="https:/img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="{{item.title}}"/>
+          </div>
+          <div class="card__content">
+            <p>{{item.title}}</p>
+          </div>
+          <div class="card__info">
+            <p>{{item.duration}}</p>
+            <p class="card__price">{{item.price}}</p>
+          </div>
+        </div>
+        {% endfor%}
+
+        <div class="modal-overlay">
+          <div class="modal">
+            <a class="close-modal">
+              <i class="material-icons">close</i>
+            </a>
+            <div class="modal-content">
+              <iframe src="" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+        <script src="./js/main.js"></script>
+
+        {%endblock%}

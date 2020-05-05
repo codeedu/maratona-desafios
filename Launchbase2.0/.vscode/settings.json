@@ -1,0 +1,10 @@
+{
+  "window.zoomLevel": 1,
+  "html.suggest.html5": true,
+  "emmet.includeLanguages": {
+    "njk": "html"
+  },
+  "files.associations": {
+    "*.njk": "njk"
+  }
+}
